@@ -1,0 +1,6 @@
+header {
+    background-image: linear-gradient(black, rgb(0, 120, 0));
+    text-shadow: 1px 1px 5px lime;
+    text-align: center;
+    padding: 1rem 0;
+}

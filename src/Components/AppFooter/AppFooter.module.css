@@ -1,0 +1,6 @@
+footer {
+    background-image: linear-gradient(rgb(0, 120, 0), black);
+    color: rgb(141, 232, 141);
+    text-align: center;
+    padding: .5rem 0;
+}
