@@ -1,5 +1,5 @@
 main {
     background-color: rgb(0, 120, 0);
-    color: rgb(141, 232, 141);
+
     min-height: calc(100vh - 69px - 34px);
 }

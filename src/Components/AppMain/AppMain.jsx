@@ -1,14 +1,15 @@
+import posts from "../../../database/db.js"
+import Card from "../Card/Card"
 import style from "./AppMain.module.css"
 export default function AppMain() {
+    console.log(posts);
+
     return (
         <main className={style.main}>
             <div className="container">
-                <div className="card">
-                    <img src="https://picsum.photos/" alt="" />
-                    <div className="card-body">
-                        <h3>title</h3>
-                        <p>content</p>
-                    </div>
+                <div className="row">
+                    {/* <Card title="post1" image="https://picsum.photos/400/300" content="ciao post" tags="vari tags" /> */}
+                    {posts.map((post, index) => <Card key={posts[index]} title={post.title} image={post.image} content={post.content} tags={post.tags.join(' ')} />)}
                 </div>
             </div>
         </main>

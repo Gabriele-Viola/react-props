@@ -8,3 +8,18 @@
     width: 80%;
     margin: auto;
 }
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+.col {
+    padding: 1rem;
+    margin: 1rem;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
