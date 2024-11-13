@@ -9,7 +9,7 @@ export default function AppMain() {
             <div className="container">
                 <div className="row">
                     {/* <Card title="post1" image="https://picsum.photos/400/300" content="ciao post" tags="vari tags" /> */}
-                    {posts.map((post, index) => <Card key={posts[index]} title={post.title} image={post.image} content={post.content} tags={post.tags.join(' ')} />)}
+                    {posts.map(post => <Card key={post.id} title={post.title} image={post.image} content={post.content} tags={post.tags.join(' ')} />)}
                 </div>
             </div>
         </main>
