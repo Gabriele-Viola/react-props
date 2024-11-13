@@ -1,5 +1,6 @@
 import style from "./Card.module.css"
 import posts from "../../../database/db.js"
+import Tag from "../tag/Tag.jsx";
 
 export default function Card({ data }) {
     console.log(data);
@@ -12,7 +13,7 @@ export default function Card({ data }) {
                 <div className="card-body">
                     <h3>{data.title}</h3>
                     <p>{data.content}</p>
-                    <p>{data.tags.join(' ')}</p>
+                    {data.tags.map((tag, index) => <Tag key={data.tags[index]} tag={tag} />)}
                 </div>
             </div>
 
