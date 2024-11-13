@@ -12,7 +12,7 @@ export default function Card({ data }) {
                 <div className="card-body">
                     <h3>{data.title}</h3>
                     <p>{data.content}</p>
-                    <p>{data.tags}</p>
+                    <p>{data.tags.join(' ')}</p>
                 </div>
             </div>
 
