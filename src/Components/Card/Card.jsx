@@ -1,5 +1,5 @@
 import style from "./Card.module.css"
-
+import posts from "../../../database/db.js"
 
 export default function Card({ data }) {
     console.log(data);
