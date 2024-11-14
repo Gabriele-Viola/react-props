@@ -1,7 +1,7 @@
 import style from "./Tag.module.css"
 export default function Tag({ tag }) {
-    let color
-    tag === 'html' ? color = style.html : tag === 'css' ? color = style.css : tag === 'php' ? color = style.php : tag === 'js' ? color = style.js : color = style.badge
+    // let color
+    // tag === 'html' ? color = style.html : tag === 'css' ? color = style.css : tag === 'php' ? color = style.php : tag === 'js' ? color = style.js : color = style.badge
 
 
 
@@ -10,7 +10,7 @@ export default function Tag({ tag }) {
 
     return (
 
-        <span className={color}>{tag}</span>
+        <span className={style[tag]}>{tag}</span>
 
 
 
